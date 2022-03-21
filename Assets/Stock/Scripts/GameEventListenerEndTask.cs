@@ -7,7 +7,7 @@ public class GameEventListenerEndTask : GameEventListener
 {
     [SerializeField] UnityEvent endTaskGameEvent;
     [SerializeField] private float delayTime = 2.0f;
-    [SerializeField] private bool isTaskEnded = false;
+    [SerializeField] private bool isTaskCompleted = false;
    
     public override void RaiseEvent()
     {
@@ -23,6 +23,6 @@ public class GameEventListenerEndTask : GameEventListener
 
     public void SetTaskState()
     {
-        isTaskEnded = true;
+        isTaskCompleted = true;
     }
 }
