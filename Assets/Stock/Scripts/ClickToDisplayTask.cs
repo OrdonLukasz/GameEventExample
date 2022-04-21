@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ClickToDisplayTask : MonoBehaviour
 {
+    public bool isClicked;
+    
     [SerializeField] GameEvent onClicked;
     [SerializeField] GameObject objectToClick;
-
-    public bool isClicked;
 
     void OnMouseDown()
     {
